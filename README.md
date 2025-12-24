@@ -32,8 +32,6 @@ ENGINE_VIEWER/
 
 
 
----
-
 ## File Overview
 
 ### index-main.html
@@ -47,7 +45,7 @@ Application entry point. Responsible for:
 
 The HTML file contains no model logic — only structural UI layout.
 
----
+
 
 ## Core Viewer Engine
 
