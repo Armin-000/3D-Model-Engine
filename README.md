@@ -29,7 +29,7 @@ ENGINE_VIEWER/
 │        ├─ ui.js                 # Labels, picking, focus mode, info panel, UI cleanup
 │        └─ naming.js             # Human-readable name mapping and component descriptions
 └─ index-main.html                # Application entry page, imports viewer and initializes UI
-
+```
 
 
 ## File Overview
