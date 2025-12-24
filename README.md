@@ -11,29 +11,24 @@ migration to React + TypeScript.
 
 ## Project Structure
 
+```text
 ENGINE_VIEWER/
-│
-├─ css/                                 # Global UI and viewer styling
-│ └─ 3dmodel.css                        # Layout, controls, labels, info panel design
-│
-├─ glb/                                 # 3D assets (GLTF / GLB models)
-│ └─ motor_animacija.glb                # Main engine model
-│
-├─ hdr/                                 # Environment HDR lighting files
-│ └─ venice_sunset_1k.hdr               # Primary HDRI used for reflections and lighting
-│
+├─ css/                           # Global UI and viewer styling
+│  └─ 3dmodel.css                 # Layout, controls, labels, info panel design
+├─ glb/                           # 3D assets (GLTF / GLB models)
+│  └─ motor_animacija.glb         # Main engine model
+├─ hdr/                           # Environment HDR lighting files
+│  └─ venice_sunset_1k.hdr        # Primary HDRI used for reflections and lighting
 ├─ viewer/
-│ ├─ core.js                            # Core viewer engine (Three.js, renderer, camera, loading, cleanup)
-│ ├─ index.js                           # Viewer runtime, UI wiring, loading logic, zoom + explode handlers
-│ │
-│ └─ models/                            # Model-specific feature modules
-│ └─ engine/                            # Engine model implementation
-│ ├─ index.js                           # Model entry point (binds explode + UI systems, lifecycle control)
-│ ├─ explode.js                         # Explode / assemble animation logic and state
-│ ├─ ui.js                              # Labels, picking, focus mode, info panel, UI cleanup
-│ ├─ naming.js                          # Human-readable name mapping and component descriptions
-│
-└─ index-main.html                      # Application entry page, imports viewer and initializes UI
+│  ├─ core.js                     # Core viewer engine (Three.js, renderer, camera, loading, cleanup)
+│  ├─ index.js                    # Viewer runtime, UI wiring, loading logic, zoom + explode handlers
+│  └─ models/                     # Model-specific feature modules
+│     └─ engine/                  # Engine model implementation
+│        ├─ index.js              # Model entry point (binds explode + UI systems, lifecycle control)
+│        ├─ explode.js            # Explode / assemble animation logic and state
+│        ├─ ui.js                 # Labels, picking, focus mode, info panel, UI cleanup
+│        └─ naming.js             # Human-readable name mapping and component descriptions
+└─ index-main.html                # Application entry page, imports viewer and initializes UI
 
 
 
